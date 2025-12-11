@@ -31,7 +31,7 @@ export const updateApplicationStageController = async (req, res) => {
   try {
     const updated = await changeApplicationStage(
       req.params.id,
-      req.body.stage,
+      req.body.newStage,
       req.user
     );
     res.json(updated);
